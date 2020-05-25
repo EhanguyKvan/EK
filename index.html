@@ -11,7 +11,8 @@
 -->
 	</head>
 	<body>
-		<!--<iframe srcdoc='<!DOCTYPE html><html><head><meta charset="utf-8"><title>嗯哼君 渠源</title></head><body><audio muted autoplay="autoplay" id="a" src="https://ehanguykvan.github.io/EK/ding.mp3"></audio><script>
+		<audio id="a" controls="controls" autoplay="autoplay"><source src="https://ehanguykvan.github.io/EK/ding.mp3" type="audio/mpeg" /></audio>
+		<script>
 			function toggleSound() {
            			var music = document.getElementById("a");//获取ID  
 			    	if (music.paused) { //判读是否播放  
@@ -22,9 +23,6 @@
             
         		}
 			
-			setInterval(toggleSound(), 500);</script></body></html>' allow = "autoplay" >
-		</iframe>
--->
-		<audio controls="controls" autoplay="autoplay"><source src="https://ehanguykvan.github.io/EK/ding.mp3" type="audio/mpeg" /></audio>
+			setInterval(toggleSound(), 500);</script>
 	</body>
 </html>
