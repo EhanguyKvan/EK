@@ -11,17 +11,7 @@
 -->
 	</head>
 	<body>
-		<script>
-			function toggleSound() {
-				var music = document.getElementById("a"); //获取ID  
-				music.play();
-				console.log("你 钉 钉 响 了");
-		
-			}
-		
-			setInterval(toggleSound(), 500);
-		</script>
-		<button width="60px";height="20px" onclick="toggleSound()">点这里</button>
+		<button width="60px";height="20px" onclick="document.getElementById("a").play()">点这里</button>
 		<audio id="a" autoplay="autoplay">
 			<source src="https://ehanguykvan.github.io/EK/ding.mp3" type="audio/mpeg" />
 		</audio>
