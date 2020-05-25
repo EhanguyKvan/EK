@@ -11,6 +11,18 @@
 -->
 	</head>
 	<body>
-		<audio autoplay="autoplay" src="https://ehanguykvan.github.io/EK/ding.mp3"></audio>
+		<audio id="a" autoplay="autoplay" src="https://ehanguykvan.github.io/EK/ding.mp3"></audio>
+		<script>
+			function toggleSound() {
+           			var music = document.getElementById("a");//获取ID  
+                		console.log(music);
+                		console.log(music.paused);
+			    	if (music.paused) { //判读是否播放  
+                			music.paused=false;
+                			music.play(); //没有就播放 
+            			}  
+            
+        		}
+		</script>
 	</body>
 </html>
